@@ -1,0 +1,19 @@
+function y = calc_BarrierCall(S0, T, r, sigma, K, H)
+
+size_S0 = size(S0);
+size_K = size(K);
+new_S0 = repmat(S0, [1, 1, size_K(2)]);
+new_K = reshape(K, [1, size_K]);
+new_K = repmat(new_K, [size_S0, 1]);
+d1 = (r + sigma^2 / 2) * T;
+d2 = (r - sigma^2 / 2) * T;
+d0 = sigma * sqrt(T);
+lambda = r - sigma^2 / 2;
+c4 = 2.0 * lambda / (sigma^2);
+h1 = (log(new_S0 ./ new_K) + d1) / d0;
+h2 = (log(new_S0 ./ new_K) + d2) / d0;
+c1 = (log(H * H ./ new_S0 ./ new_K) + d1) / d0;
+c2 = (log(H * H ./ new_S0 ./ new_K) + d2) / d0;
+c0 = new_S0 .* normcdf(h1, 0, 1) - new_K * exp(-r * T) .* normcdf(h2, 0, 1);
+j0 = new_S0 .* power(H ./ new_S0, c4 + 2.0) .* normcdf(c1, 0, 1) - new_K * exp(-r * T) .* power(H ./ new_S0, c4) .* normcdf(c2, 0, 1);
+y = c0 - j0;
