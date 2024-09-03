@@ -48,11 +48,11 @@ All detailed results are available in the [Results](https://github.com/KennethKZ
 
 ## Replicating
 
-To replicate the results in the paper, proceed as follows: 
+Using Example 1 as a reference, the following steps outline the process to replicate the results: 
 
-1. For our proposed method, to get a CI of CVaR, run file "get_results.m". The parameters including time horizon and confidence level are problem dependent. Results are stored in the folder "results". For coverage probabilities and average CIs of multiple replications, run "get_results.m", and then run "gather_results.m".
+1. For our proposed method, to get a CI of CVaR, run file `get_results.m`. Parameters can be adjusted to suit your purpose, such as the number of replications `replications`, the time horizon `T`, the confidence level of the confidence interval `z_beta`, etc. Results will be stored in the folder [results](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Our_method/results). For coverage probabilities and average CIs of multiple replications, run `get_results.m`, and then run `gather_results.m`.
 
-2. For the EL procedure, the codes for parameter finding are in the folder "findPara". After finding the optimal parameter setting among 9 settings, update parameters in "get_results.m" in the "run" folder. In the folder "findPara", the codes for the i-th (i=1,...,9) parameter setting are named "group i". Set parameters in "get_results.m" and run it to obtain the CI of CVaR. For coverage probabilities and average CIs of multiple replications, run "get_results.m", and then run "gather_results.m".
+2. For the EL procedure, the codes for parameter finding are in the folder "findPara". After finding the optimal parameter setting among 9 settings, update parameters in `get_results.m` in the "run" folder. In the folder "findPara", the codes for the i-th (i=1,...,9) parameter setting are named "group i". Set parameters in `get_results.m` and run it to obtain the CI of CVaR. For coverage probabilities and average CIs of multiple replications, run "get_results.m", and then run `gather_results.m`.
 
 3. Specifically, for Example 1, the codes for the case of out-of-sample (without sample recycling) are in the folder "\Example 1\Out-of-sample". For Example 1, the codes for different basis functions (standard polynomials up to fourth order and Laguerre polynomials up to second order) are stored in the folder "\Example 1\Standard polynomials up to fourth order" and "\Example 1\Laguerre polynomials up to second order".
 
