@@ -30,21 +30,7 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ## Description
 
-The goal of this software is to demonstrate the effect of constructing confidence intervals for CVaR proposed in "Simulating Confidence Intervals for Conditional Value-at-Risk via Least-Squares Metamodels" by Qidong Lai, Guangwu Liu, Bingfeng Zhang and Kun Zhang.
-
 This archive consists of the codes of three examples (Example 1, Example 2 and Example 3) in main text and one example (jump diffusion model) in Appendix. The codes for each example are in a folder. In each example, we upload the codes for different methods. The codes for our proposed method is in the file "our method" while those for the EL procedure proposed by Lan et al. (2010) is in the file "Lan".
-
-## Building
-
-1. Clone this repository
-
-2. Install Matlab (https://www.mathworks.com/products/matlab.html). Matlab is a commercial mathematical software.
-
-3. The codes are entirely written in Matlab m-code. To install, unzip the downloaded files in any directory and add the subdirectory to the Matlab path.
-
-## Results
-
-All detailed results are available in the [Results](https://github.com/LiangGuoRUC/2023.0118/tree/main/src/3Barrier_Regression) folder.
 
 ## Replicating
 
