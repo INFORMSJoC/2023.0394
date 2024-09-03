@@ -54,15 +54,13 @@ Using Example 1 as a reference, the following steps outline the process to repli
 
 2. For the EL procedure, the codes for parameter finding are in the folder [findPara](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Lan/findPara). After finding the optimal parameter setting among 9 settings, update parameters in `get_results.m` in the [run](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Lan/run) folder. In the folder [findPara](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Lan/findPara), the codes for the i-th (i=1,...,9) parameter setting are named "group i". Set parameters in `get_results.m` and run it to obtain the CI of CVaR. For coverage probabilities and average CIs of multiple replications, run "get_results.m", and then run `gather_results.m`.
 
-3. Specifically, for Example 1, the codes for the case of out-of-sample (without sample recycling) are in the folder [Out-of-sample](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Out-of-sample). For Example 1, the codes for different basis functions (standard polynomials up to fourth order and Laguerre polynomials up to second order) are stored in the folder "\Example 1\Standard polynomials up to fourth order" and [Laguerre polynomials up to second order]().
+3. Specifically, for Example 1, the codes for the case of out-of-sample (without sample recycling) are in the folder [Out-of-sample](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Out-of-sample). For Example 1, the codes for different basis functions (standard polynomials up to fourth order and Laguerre polynomials up to second order) are stored in the folder [Standard polynomials up to fourth order](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Standard_polynomials_up_to_fourth_order) and [Laguerre polynomials up to second order](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Laguerre_polynomials_up_to_second_order).
 
-4. The "results" folder contains subfolders named after sample sizes (e.g., "100000"). For example, if a subfolder is named "100000", it contains files storing the end-points of a CI with simulation sample size 100000 for one replication.
+4. The [results](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Our_method/results) folder contains subfolders named after sample sizes (e.g., "100000"). For example, if a subfolder is named "100000", it contains files storing the end-points of a CI with simulation sample size 100000 for one replication.
 
 ## Contact
 
 If you have any questions about the paper, please contact Qidong Lai at qidong.lai@my.cityu.edu.hk.
-
-
 
 
 
