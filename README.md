@@ -56,7 +56,7 @@ Using Example 1 as a reference, the following steps outline the process to repli
 
 3. Specifically, for Example 1, the codes for the case of out-of-sample (without sample recycling) are in the folder [Out-of-sample](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Out-of-sample). For Example 1, the codes for different basis functions (standard polynomials up to fourth order and Laguerre polynomials up to second order) are stored in the folder [Standard polynomials up to fourth order](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Standard_polynomials_up_to_fourth_order) and [Laguerre polynomials up to second order](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Laguerre_polynomials_up_to_second_order).
 
-4. The [results](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Our_method/results) folder contains subfolders named after sample sizes (e.g., "100000"). For example, if a subfolder is named "100000", it contains files storing the end-points of a CI with simulation sample size 100000 for one replication.
+4. After running `get_results.m`, the [results](https://github.com/KennethKZH/2023.0394/tree/main/Example1/Our_method/results) folder will contain subfolders named after sample sizes (e.g., "100000"). For example, if a subfolder is named "100000", it contains files storing the end-points of a CI with simulation sample size 100000 for one replication.
 
 ## Contact
 
