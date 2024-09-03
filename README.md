@@ -60,7 +60,7 @@ Using Example 1 as a reference, the following steps outline the process to repli
 
 ## Contact
 
-If you have any questions about the paper, please contact Qidong Lai at qidong.lai@my.cityu.edu.hk.
+If you have any questions about the codes, please contact Qidong Lai at qidong.lai@my.cityu.edu.hk.
 
 
 
